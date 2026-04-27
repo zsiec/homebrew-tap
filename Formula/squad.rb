@@ -5,21 +5,21 @@
 class Squad < Formula
   desc "Project-management framework for software work done with AI coding agents"
   homepage "https://github.com/zsiec/squad"
-  version "0.3.0-rc2"
+  version "0.3.0-rc3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zsiec/squad/releases/download/v0.3.0-rc2/squad_0.3.0-rc2_darwin_amd64.tar.gz"
-      sha256 "32c6336eb38564d42ffeda34ef305a22620c6f9febbec74e15782ef4b34b1078"
+      url "https://github.com/zsiec/squad/releases/download/v0.3.0-rc3/squad_0.3.0-rc3_darwin_amd64.tar.gz"
+      sha256 "e940d9547744204c374243d235c923ebb9b217708bc50b48739959b297f01eba"
 
       define_method(:install) do
         bin.install "squad"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zsiec/squad/releases/download/v0.3.0-rc2/squad_0.3.0-rc2_darwin_arm64.tar.gz"
-      sha256 "58d928b94ae6d15755392fe61998e54314116d9f1c44cd3d53b7b1a8253f205c"
+      url "https://github.com/zsiec/squad/releases/download/v0.3.0-rc3/squad_0.3.0-rc3_darwin_arm64.tar.gz"
+      sha256 "7c29f38129370c52d3625939d53ba2e9f771b873e925c262eb0487dc1c7318c9"
 
       define_method(:install) do
         bin.install "squad"
@@ -29,15 +29,15 @@ class Squad < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zsiec/squad/releases/download/v0.3.0-rc2/squad_0.3.0-rc2_linux_amd64.tar.gz"
-      sha256 "6882ca106254c2506b1862eea08c847bef6d3b7b51d55966bcc6ae994bcbef56"
+      url "https://github.com/zsiec/squad/releases/download/v0.3.0-rc3/squad_0.3.0-rc3_linux_amd64.tar.gz"
+      sha256 "1ea1a98b57b5fdd9e1b1f2aa7d77d227df49f06320eb52569b66c64be93a1f38"
       define_method(:install) do
         bin.install "squad"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zsiec/squad/releases/download/v0.3.0-rc2/squad_0.3.0-rc2_linux_arm64.tar.gz"
-      sha256 "4eafa259bffb4323e825df144137c2617a7d646a466150d869e06b632c570f29"
+      url "https://github.com/zsiec/squad/releases/download/v0.3.0-rc3/squad_0.3.0-rc3_linux_arm64.tar.gz"
+      sha256 "a8b8fffdc616ab386eb8d5297b91dbf737f3fd9b72ae6ba6c359c6d3f4b5ec4e"
       define_method(:install) do
         bin.install "squad"
       end
